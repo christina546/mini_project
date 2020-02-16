@@ -1,0 +1,78 @@
+﻿@model IEnumerable<MiniProject.Models.Car>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Our Cars</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vehicleType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.make)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.engine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numDoors)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numWheels)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bodyType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vehicleType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.make)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.engine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numDoors)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numWheels)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bodyType)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
