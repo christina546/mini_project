@@ -3,7 +3,7 @@ Take home project - A mini vehicle management system with CRUD operations
 
 ## Prerequisites
 Visual Studio </br>
-.NET Core version 3.1 framework
+.NET Core version 3.1
 
 ## Dependencies
 Microsoft EF Core </br>
