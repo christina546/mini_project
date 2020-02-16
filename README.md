@@ -1,5 +1,5 @@
 # mini_project
-Take home project - A mini vehicle management system
+Take home project - A mini vehicle management system with CRUD operations
 
 ## Prerequisites
 Visual Studio </br>
@@ -8,4 +8,5 @@ Visual Studio </br>
 ## Dependencies
 Microsoft EF Core </br>
 Microsoft EF Core sqlite </br>
-Microsoft EF Tools 
+
+
