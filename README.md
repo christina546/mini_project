@@ -1,5 +1,5 @@
 # mini_project
-Take home project - A mini vehicle management system with CRUD operations
+A mini vehicle management system with CRUD operations
 
 ## Prerequisites
 Visual Studio </br>
